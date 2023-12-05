@@ -1,0 +1,539 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* debut header */
+    /* div header_top nav-logo */
+        /* le logo est a gauche et ma nav est a droite avec un fond orange et mes le fond de mes menu et rouge  et sur la meme ligne */
+        /* juste en dessous il y a une photo baniere avec a l'interieur un barre de recherche et un texte */
+    /* fin div header_top nav-logo */
+/* fin header */
+/* main */
+    /*section */
+        /* il ya un titre centrer */
+        /*  il ya une img et un texte sur la meme ligne */
+    /* fin section */
+    /* section */
+        /* il ya un titre centrer */
+        /*  il ya une img et un texte sur la meme ligne */
+    /* fin section */
+/*fin du main  */
+/* debut footer  */
+    /* div */
+        /* il un footer en rouge et a la l'interieur il y a un logo et un texte a affilé */
+    /* fin div */
+/* fin du footer */
+
+/* STYLE GLOBAL */
+
+/* Liens */
+
+a {
+    color: black;
+    text-decoration: none;
+    /* font-size: 45px; */
+    vertical-align: middle;
+}
+
+body{
+    cursor: url("images/kunai.png"), auto;
+}
+
+/* Titre */
+
+h1 {
+    text-align: center;
+}
+
+/* Formulaire */
+
+input, textarea{
+    /* padding: 8px 150px 0 0; */
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    background-color: gainsboro;
+    padding: 20px;
+}
+
+
+
+/* HEADER */
+
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: orange;
+}
+
+/* Logo Top */
+
+.logo-top {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo-top .logo {
+    /* width: 150px; */
+    height: 150px;
+}
+
+
+/* Navbar Top (Navigation) */
+
+#nav ul {
+    display: flex;
+    width: 100%;
+    /* width: 80%; */
+    /* justify-content: space-around; */
+}
+
+#nav li {
+    list-style: none;
+    background-color: red; 
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    /* width: 680px; */
+    /* align-items: center; */
+}
+
+#nav {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    /* align-items: center; */
+    font-size: calc(0.5rem + 1.5vw);
+}
+
+#nav ul li a{
+    font-size: 46px;
+}
+
+#icon {
+    cursor: pointer;
+    display: none  ;
+} 
+
+
+/* Bannière */
+
+.header_banniere{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header_banniere {
+    background: url(images/bannieretop.png) center / cover no-repeat;
+    /* height: 450px; */
+}
+
+.contain-banniere{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+.img_banniere{
+    height: 500px;
+    margin-left: 30px;
+}
+
+.texte_top{
+   width: 50%;
+   text-align: center;
+   margin: 83.5px;
+   font-size: 17px;
+   display: flex;
+   flex-direction: column;
+   margin-left: 150px;
+}
+
+.serch{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.serch input[type="search"]{
+    padding: 25px;
+    width: 600px;
+}
+
+/* MAIN (Contenu de la page)  */
+
+
+/* Bloc Section - Accueil */
+
+.container {
+    display: flex;
+    margin: 100px;
+}
+
+.par {
+    width: 55%;
+    font-size: 22px;
+}
+
+/* Galerie - Communauté */
+
+/* Bibliothèque Width */
+.w-33 {
+    width: calc(100% / 3); /* 3 blocs de 33.33% */
+}
+
+.galerie {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container_galerie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+/* .photo {
+    
+    flex-direction: column;
+    display:flex;
+    background-color: red;
+    border-radius: 10%;
+    width: 500px;
+    height: 600px;
+    justify-content: center;
+    padding: auto;
+    margin:35px;
+    text-align: center;
+} */
+
+/* .picture {
+    margin-right: 25px;
+} */
+
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    width: 385px;
+    margin: 35px auto;
+    padding: 20px;
+    background-color: red;
+    border-radius: 10%;
+}
+
+.petite {
+    display: block;
+    width: 170px;
+    height: 170px;
+}
+
+/* Bloc Central - Image Naruto Central - Communauté */
+
+/* .centreimg {
+
+} */
+
+.img_banniere2 {
+    display: block;
+    width: 100%;
+    /* height: 600px; */
+    /* margin-right: 250px;
+    margin-top: 40px; */
+}
+
+/* Bloc Droit - Contenu Texte - Communauté */
+
+/* .texte_top2 {
+    font-size: 29px;
+    text-align: center;
+} */
+
+.texte_top2 p {
+    padding: 20px;
+    font-size: 29px;
+    text-align: center;
+}
+
+.container_com {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.par2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+/* media bloc caroussel*/
+
+.caroussel{
+    width: 50vw;
+    margin: 50px auto;
+    position: relative;
+    z-index: -2;
+    
+
+
+}
+.caroussel h1{
+    padding: 20px 0;
+    font-size: 40px;
+}
+
+.slide-1{
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    border: solid 3px red;
+    border-radius: 10px;
+}
+.slide-1 .slide{
+    height: 100%;
+    width: 100%;
+    animation: slider 12s infinite ease-in-out;
+}
+
+img.test {
+    width: 1100px;
+    height: 600px;
+    flex-shrink: 0;
+}
+
+ /* .inputch{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+ 
+ } */
+
+
+
+
+ /* Formulaire de Contact */
+
+.contaner-cont{
+    display: flex;
+    justify-content: center;
+} 
+
+.contact {
+    display: flex;
+    background-color: red;
+    border-radius: 10%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 20px 40px;
+}
+
+.form {
+    margin-top: 29px;
+}
+
+.contact h1 {
+    color: white;
+    font-size: 45px;
+}
+
+.forsubmit{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.forsubmit input[type="text"],
+.forsubmit input[type="email"] {
+    padding: 16px;
+}
+
+.forsubmit .button{
+    margin-top: 20px;
+    font-weight: 600;
+    background-color: orange;
+}
+
+.forsubmit label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: white;
+}
+
+/* FOOTER (Bas de page) */
+
+footer {
+    background-color: orange;
+    width: 100%;
+}
+
+.buttom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo-bottom .logo {
+    /* width: 150px; */
+    height: 150px;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
+@keyframes slider {
+
+    0%,
+
+    20% {
+        transform: translateX(0);
+    }
+    25%,
+    45%{
+        transform: translateX(-100%)
+    }
+        
+    50%,
+    75%{
+        transform: translateX(-200%);
+
+    }
+    75%,
+    95%{
+        transform: translateX(-300%);
+
+    }
+    100%{
+        transform: translateX(-400%);
+    }
+        
+    
+}
+ 
+ /* X-Large devices (large desktops, less than 1400px) */
+@media screen and (max-width: 1400px) {
+    .centreimg {
+        display: none;
+    }
+
+    #nav ul li a {
+        font-size: 28px;
+    }
+
+    .w-33 {
+        width: unset;
+    }
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+/* @media screen and (max-width: 1200px) {
+    .logo-top .logo {
+        height: 100px;
+    }
+
+    .galerie {
+        width: 90%;
+    }
+} */
+
+/* Medium devices (tablets, less than 992px) */
+/* @media screen and (max-width: 992px) {
+    .container_galerie {
+        flex-direction: column;
+    }
+} */
+
+/* Small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 768px) {
+
+    #icon {
+        display: block ;
+        
+    }
+    #icon::before{
+    content: "\2630";
+    }
+
+    .active #icon::before {
+        content: "\2715";
+    }
+
+    nav {
+       display: block;
+       position: relative;
+    }
+
+    nav ul {
+        position: fixed;
+        left: -100%;
+        top: 154px;
+        flex-direction: column;
+        background-color: orange;
+        width: 100%;
+        text-align: center;
+        transition: 0.25s;
+    }
+
+    nav li {
+        padding: 3px 0;
+    }
+
+    nav li :hover {
+        background-color: red;
+    }
+
+    #nav li {
+        background-color: orange;
+    } 
+
+    nav.active ul {
+    left: 0;
+}
+
+.narmarche{
+    float: left;
+    width: 200px;
+    height: 350px;
+
+}
+
+.poing{
+    float: left;
+    width: 200px;
+    height: 350px;
+}
+img.test{
+    width: 250px;
+    height: 200px;
+    flex-shrink: 0;
+
+
+}
+}
+
+
+/* 
+/* X-Small devices (portrait phones, less than 576px) */
+/* @media screen and (max-width: 576 */ 
